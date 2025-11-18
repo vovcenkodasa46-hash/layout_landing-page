@@ -1,4 +1,68 @@
+:root {
+  --white: #fff;
+}
+
 body {
   margin: 0;
 }
 
+.header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  background-image: url(/src/img/bg-header-mobile.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.icon--phone {
+  background-image: url(/src/img/icons/Icon-Phone-call.png);
+}
+
+.icon--menu {
+  background-image: url(/src/img/icons/Icon-Burger-menu.png);
+}
+
+.header__bottom {
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateY(-15%);
+}
+
+.header__title {
+  width: 280px;
+  height: 80px;
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -1.5px;
+  font-size: 40px;
+  line-height: 100%;
+}
