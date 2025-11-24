@@ -1,9 +1,25 @@
 :root {
   --white: #fff;
+  --red: #D12D35;
 }
 
-body {
+.page__body {
   margin: 0;
+}
+
+.page__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page__menu:target {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .header {
@@ -27,6 +43,8 @@ body {
 .header__icons {
   display: flex;
   gap: 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .icon {
@@ -52,17 +70,41 @@ body {
   text-align: center;
   text-transform: uppercase;
   transform: translateY(-15%);
+  position: relative;
+  z-index: 1;
 }
 
 .header__title {
   width: 280px;
   height: 80px;
   margin: 0;
-  font-family: "Cinzel", serif;
+  font-family: Cinzel, serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   letter-spacing: -1.5px;
   font-size: 40px;
   line-height: 100%;
+}
+
+.menu {
+  box-sizing: border-box;
+  padding: 25px 20px;
+  height: 100vh;
+  background-color: var(--red);
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon--close {
+  background-image: url(/src/img/icons/Icon-Close.png);
+}
+
+.menu__top .icon--close {
+  position: relative;
+  z-index: 3;
 }
