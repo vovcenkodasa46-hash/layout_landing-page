@@ -44,7 +44,6 @@
   display: flex;
   gap: 24px;
   position: relative;
-  z-index: 2;
 }
 
 .icon {
@@ -69,9 +68,7 @@
   color: var(--white);
   text-align: center;
   text-transform: uppercase;
-  transform: translateY(-15%);
   position: relative;
-  z-index: 1;
 }
 
 .header__title {
@@ -104,7 +101,3 @@
   background-image: url(/src/img/icons/Icon-Close.png);
 }
 
-.menu__top .icon--close {
-  position: relative;
-  z-index: 3;
-}
