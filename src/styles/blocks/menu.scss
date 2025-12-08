@@ -7,12 +7,14 @@
   text-transform: uppercase;
 
   &__content {
-    padding-inline: 20px;
+    @include content-padding-inline;
+
   }
 
   &__top {
     margin-top: 25px;
-    margin-inline: 20px;
+
+    @include top-bar-margin-inline;
   }
 
   &__navigation {

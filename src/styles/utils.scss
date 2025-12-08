@@ -1,0 +1,25 @@
+@mixin on-tablet {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+
+@mixin top-bar-margin-inline {
+  margin-inline: 20px;
+
+  @include on-tablet {
+  margin-inline: 72px;
+  }
+}
+
+@mixin content-padding-inline {
+  padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 72px;
+  }
+}
+
+
+
