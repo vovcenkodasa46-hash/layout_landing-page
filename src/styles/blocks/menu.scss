@@ -1,0 +1,23 @@
+.menu {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: $red;
+  font-weight: 700;
+  font-family: Cinzel, serif;
+  text-transform: uppercase;
+
+  &__content {
+    padding-inline: 20px;
+  }
+
+  &__top {
+    margin-top: 25px;
+    margin-inline: 20px;
+  }
+
+  &__navigation {
+    margin-bottom: 32px;
+    margin-top: 40px;
+  }
+
+}

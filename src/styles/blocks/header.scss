@@ -1,0 +1,42 @@
+.header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/src/img/bg-header-mobile.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__top {
+    margin-top: 25px;
+    margin-inline: 20px;
+  }
+
+  &__bottom {
+    box-sizing: border-box;
+    flex: 1;
+    padding-inline: 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    width: 280px;
+    height: 80px;
+    margin: 0;
+    font-family: Cinzel, serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -1.5px;
+    font-size: 40px;
+    line-height: 100%;
+    transform: translateY(-90%);
+  }
+
+}
