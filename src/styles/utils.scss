@@ -21,5 +21,13 @@
   }
 }
 
+@mixin text-transform-title {
+  transform: translateY(-100%);
+
+  @include on-tablet {
+    transform: translateY(-150%);
+  }
+}
+
 
 
