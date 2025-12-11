@@ -7,4 +7,18 @@
       display: flex;
       gap: 24px;
     }
+
+    &__logo-link {
+      display: flex;
+    }
+
+    &__logo {
+      height: 46px;
+
+      @include on-tablet {
+        height: 65px;
+      }
+
+      @include hover(transform, scale(120%));
+    }
   }
