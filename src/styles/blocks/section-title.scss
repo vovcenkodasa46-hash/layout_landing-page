@@ -1,0 +1,38 @@
+.section-title {
+    font-family: Cinzel, serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    margin: 0;
+
+    text-align: center;
+  &--2 {
+    margin: 0;
+    order: 2;
+
+    font-family: Cinzel, serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+  }
+
+    &__description {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  &__description--red {
+    margin: 0;
+    order: 1;
+
+    font-family: Cinzel, serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    color: $background-color;
+    text-align: start;
+  }
+
+}
