@@ -11,17 +11,21 @@
   }
 
   &--phone {
-    background-image: url(/src/img/icons/Icon-Phone-call.png);
+    background-image: url(/src/img/icons/Icon-Phone-call-x2.png);
     background-size: cover;
   }
 
   &--menu {
-    background-image: url(/src/img/icons/Icon-Burger-menu.png);
+    background-image: url(/src/img/icons/Icon-Burger-menu-x2.png);
     background-size: cover;
   }
 
+  &--menu:hover {
+    background-image: url(/src/img/icons/Icon-Burger-menu-hover.png);
+  }
+
   &--close {
-    background-image: url(/src/img/icons/Icon-Close.png);
+    background-image: url(/src/img/icons/Icon-Close-x2.png);
     background-size: cover;
   }
 }

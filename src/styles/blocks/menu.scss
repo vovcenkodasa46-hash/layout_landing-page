@@ -1,7 +1,7 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: $red;
+  background-color: $background-color;
   font-weight: 700;
   font-family: Cinzel, serif;
   text-transform: uppercase;
@@ -15,6 +15,10 @@
     margin-top: 25px;
 
     @include top-bar-margin-inline;
+
+    @include on-tablet {
+      margin-top: 32px;
+    }
   }
 
   &__navigation {
