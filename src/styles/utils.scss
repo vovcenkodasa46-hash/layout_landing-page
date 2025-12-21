@@ -10,7 +10,7 @@
   }
 }
 
-@mixin top-bar-margin-inline {
+@mixin margin-inline {
   margin-inline: 20px;
 
   @include on-tablet {

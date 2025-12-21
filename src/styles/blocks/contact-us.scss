@@ -2,5 +2,9 @@
   &__title {
     margin-top: 100px;
     margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 48px;
+    }
   }
 }

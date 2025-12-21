@@ -11,7 +11,7 @@
   &__top {
     margin-top: 25px;
 
-    @include top-bar-margin-inline;
+    @include margin-inline;
 
     @include on-tablet {
       margin-top: 50px;
