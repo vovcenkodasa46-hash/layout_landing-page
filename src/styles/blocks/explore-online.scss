@@ -1,4 +1,6 @@
 .explore-online {
+  @include margin-inline;
+
   &__title {
     margin-top: 100px;
     margin-bottom: 40px;
