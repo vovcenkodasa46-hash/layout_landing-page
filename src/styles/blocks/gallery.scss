@@ -1,0 +1,80 @@
+.gallery {
+
+  &__title {
+    font-family: Cinzel, serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: $background-color;
+    margin: 0;
+  }
+
+  &__description {
+    font-family: Cinzel, serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: $main-dark;
+    margin: 0 0 48px;
+  }
+
+    &__description:last-child {
+    margin: 0 0 40px;
+  }
+
+  &__pictures {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+
+  &__pictures--3--pictures {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__pictures-new-look {
+    background-image: url(/src/img/new-look.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+  }
+  &__pictures-men {
+    background-image: url(/src/img/men.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+  }
+  &__pictures-shiva {
+    background-image: url(/src/img/shiva.png);
+    width: 88px;
+    height: 87px;
+    background-size: cover;
+  }
+  &__pictures-carpet {
+    background-image: url(/src/img/carpet.png);
+    width: 88px;
+    height: 87px;
+    background-size: cover;
+  }
+  &__pictures-demon {
+    background-image: url(/src/img/demon.png);
+    width: 88px;
+    height: 87px;
+    background-size: cover;
+  }
+  &__pictures-clock {
+    background-image: url(/src/img/clock.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+  }
+  &__pictures-statue {
+    background-image: url(/src/img/statue.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+  }
+
+
+}
