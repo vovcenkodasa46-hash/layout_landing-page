@@ -21,9 +21,15 @@
     font-size: 16px;
     line-height: 27px;
     color: $main-dark;
+    margin: 0 0 8px;
+  }
+
+    &__till:last-child {
+    margin: 0 0 16px;
   }
 
   &__day {
+    margin: 0 0 8px;
     font-family: Cinzel, serif;
     font-weight: 400;
     font-size: 16px;
@@ -37,6 +43,7 @@
     font-size: 16px;
     line-height: 27px;
     color: $main-dark;
+    margin: 0;
   }
 
   &__closed-days {
@@ -45,5 +52,6 @@
     font-size: 16px;
     line-height: 27px;
     color: $main-dark;
+    margin: 0;
   }
 }
