@@ -1,0 +1,11 @@
+.footer {
+  &__picture {
+    background-image: url(/src/img/footer.png);
+    background-size: contain;
+
+    width: 630px;
+    height: 180px;
+
+    margin-top: 100px;
+  }
+}

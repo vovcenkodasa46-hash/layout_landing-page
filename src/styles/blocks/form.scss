@@ -1,0 +1,84 @@
+.form {
+  @include margin-inline;
+
+  &__name {
+    box-sizing: border-box;
+    width: 280px;
+    height: 48px;
+
+    font-family: Cinzel, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $placeholder-color;
+
+    padding-top: 7px;
+    padding-left: 11px;
+
+    background-color: $form-color;
+    border: none;
+
+    margin-bottom: 16px;
+
+  }
+
+  &__email {
+    box-sizing: border-box;
+    width: 280px;
+    height: 48px;
+    font-family: Cinzel, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $placeholder-color;
+
+    padding-top: 7px;
+    padding-left: 11px;
+
+    background-color: $form-color;
+    border: none;
+
+    margin-bottom: 16px;
+  }
+
+  &__message {
+    box-sizing: border-box;
+    width: 280px;
+    height: 144px;
+    font-family: Cinzel, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $placeholder-color;
+
+    background-color: $form-color;
+
+    padding-top: 14px;
+    padding-left: 11px;
+    border: none;
+
+    margin-bottom: 32px;
+  }
+
+  &__button-send {
+    width: 280px;
+    height: 56px;
+    border: none;
+    background: transparent;
+    background-color: $background-color;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    color: $text-color;
+    transition: all $transition-duration;
+
+    font-family: Cinzel, serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__button-send:hover {
+    background-color: $hover-button;
+    cursor: pointer;
+  }
+}
