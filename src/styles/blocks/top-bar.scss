@@ -27,6 +27,10 @@
     }
 
     &__logo-menu {
-      height: 46px; 
-    }
+      height: 46px;
+
+      @include on-dekstop {
+        height: 65px;
+      }
   }
+}

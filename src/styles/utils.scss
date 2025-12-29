@@ -30,7 +30,11 @@
   transform: translateY(-100%);
 
   @include on-tablet {
-    transform: translateY(-150%);
+    transform: translateY(-95%);
+  }
+
+  @include on-dekstop {
+    transform: translateY(-115%);
   }
 }
 

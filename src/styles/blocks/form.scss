@@ -10,7 +10,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: $placeholder-color;
 
     padding-top: 7px;
     padding-left: 11px;
@@ -20,6 +19,14 @@
 
     margin-bottom: 16px;
 
+  }
+
+  &__name::placeholder {
+    color: $placeholder-color;
+  }
+
+    &__name:hover::placeholder {
+    color: $main-dark;
   }
 
   &__email {
@@ -30,7 +37,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: $placeholder-color;
 
     padding-top: 7px;
     padding-left: 11px;
@@ -41,6 +47,14 @@
     margin-bottom: 16px;
   }
 
+  &__email::placeholder {
+    color: $placeholder-color;
+  }
+
+    &__email:hover::placeholder {
+    color: $main-dark;
+  }
+
   &__message {
     box-sizing: border-box;
     width: 280px;
@@ -49,7 +63,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: $placeholder-color;
 
     background-color: $form-color;
 
@@ -58,6 +71,14 @@
     border: none;
 
     margin-bottom: 32px;
+  }
+
+    &__message::placeholder {
+    color: $placeholder-color;
+  }
+
+    &__message:hover::placeholder {
+    color: $main-dark;
   }
 
   &__button-send {
@@ -80,5 +101,9 @@
   &__button-send:hover {
     background-color: $hover-button;
     cursor: pointer;
+  }
+
+    &__button-send:active {
+    background-color: $pressed-button;
   }
 }

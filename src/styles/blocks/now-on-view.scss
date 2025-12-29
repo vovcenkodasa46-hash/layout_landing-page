@@ -26,6 +26,10 @@
     background-color: $hover-button;
   }
 
+    &__button:active {
+    background-color: $pressed-button;
+  }
+
   &__view-all {
     color: $text-color;
     text-decoration: none;

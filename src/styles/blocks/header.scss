@@ -16,6 +16,10 @@
     @include on-tablet {
       margin-top: 50px;
     }
+
+    @include on-dekstop {
+      margin-inline: 120px;
+    }
   }
 
   &__bottom {
@@ -33,8 +37,6 @@
   }
 
   &__title {
-    width: 280px;
-    height: 80px;
     margin: 0;
     font-family: Cinzel, serif;
     font-optical-sizing: auto;
@@ -45,6 +47,14 @@
     line-height: 100%;
 
     @include text-transform-title;
+
+    @include on-tablet {
+      font-size: 64px;
+    }
+
+    @include on-dekstop {
+      font-size: 80px;
+    }
   }
 
 }

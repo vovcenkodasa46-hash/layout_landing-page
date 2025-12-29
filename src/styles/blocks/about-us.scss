@@ -1,4 +1,9 @@
 .about-us {
+  @include on-tablet {
+    display: flex;
+    place-content: center;
+    gap: 24px;
+  }
 
   &__wrapper {
     display: flex;
