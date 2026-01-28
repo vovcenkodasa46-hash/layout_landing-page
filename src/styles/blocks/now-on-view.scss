@@ -1,10 +1,9 @@
 .now-on-view {
   @include margin-inline;
-
-  // &__gallery {
-  //   display: flex;
-  //   place-content: center;
-  // }
+  
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 20px;
 
   &__wrapper {
     display: flex;

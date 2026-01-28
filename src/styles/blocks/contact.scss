@@ -1,6 +1,5 @@
 .contact {
-  @include margin-inline;
-
+  margin-inline: 20px;
   margin-bottom: 48px;
 
     &__name {

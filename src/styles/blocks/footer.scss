@@ -3,9 +3,17 @@
     background-image: url(/src/img/footer.png);
     background-size: contain;
 
-    width: 630px;
     height: 180px;
 
     margin-top: 100px;
+
+    @include on-tablet {
+      background-image: url(/src/img/footer-x2.png);
+      height: 359px;
+    }
+
+    @include on-dekstop {
+      background-image: url(/src/img/footer-dekstop.png);
+    }
   }
 }

@@ -30,13 +30,16 @@
 
   &__pictures {
     display: flex;
-    gap: 20px;
+    place-content: center;
     margin-bottom: 24px;
+
+
+    @include on-tablet
   }
 
   &__pictures--3--pictures {
     display: flex;
-    gap: 8px;
+    place-content: center;
   }
 
   &__pictures-new-look {
@@ -44,11 +47,13 @@
     width: 130px;
     height: 130px;
     background-size: cover;
+    margin-right: 20px;
 
     @include on-tablet {
       background-image: url(/src/img/new-look-wide.png);
       width: 392px;
       height: 186px;
+      margin-right: 24px;
     }
 
     @include on-dekstop {
@@ -81,10 +86,12 @@
     width: 88px;
     height: 87px;
     background-size: cover;
+    margin-right: 8px;
 
     @include on-tablet {
       width: 288px;
       height: 284px;
+      margin-right: 24px;
     }
 
     @include on-dekstop {
@@ -99,16 +106,19 @@
     width: 88px;
     height: 87px;
     background-size: cover;
+    margin-right: 8px;
 
     @include on-tablet {
       width: 288px;
       height: 284px;
+      margin-right: 0;
     }
 
     @include on-dekstop {
       background-image: url(/src/img/carpet-big.png);
       width: 324px;
       height: 320px;
+      margin-right: 24px;
     }
 
   }
@@ -119,7 +129,11 @@
     background-size: cover;
 
     @include on-tablet {
-      visibility: hidden;
+      display: none;
+    }
+
+    @include on-dekstop {
+      display: block;
     }
 
     @include on-dekstop {
@@ -135,10 +149,12 @@
     width: 130px;
     height: 130px;
     background-size: cover;
+    margin-right: 20px;
 
     @include on-tablet {
       width: 184px;
       height: 186px;
+      margin-right: 24px;
     }
 
     @include on-dekstop {
@@ -147,7 +163,7 @@
       height: 320px;
     }
   }
-  
+
   &__pictures-statue {
     background-image: url(/src/img/statue.png);
     width: 130px;

@@ -46,5 +46,17 @@
   }
 }
 
+@mixin form-width {
+  width: 280px;
+
+  @include on-tablet {
+    width: 288px;
+  }
+
+  @include on-dekstop {
+    width: 411px;
+  }
+}
+
 
 

@@ -1,6 +1,13 @@
 .explore-online {
   @include margin-inline;
 
+  &__content {
+    @include on-dekstop {
+      display: flex;
+      gap: 24px;
+    }
+  }
+
   &__title {
     margin-top: 100px;
     margin-bottom: 40px;
