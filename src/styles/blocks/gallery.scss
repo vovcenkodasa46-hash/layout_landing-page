@@ -33,8 +33,9 @@
     place-content: center;
     margin-bottom: 24px;
 
+    @include on-tablet;
 
-    @include on-tablet
+    cursor: pointer;
   }
 
   &__pictures--3--pictures {
@@ -48,6 +49,7 @@
     height: 130px;
     background-size: cover;
     margin-right: 20px;
+    transition: all $transition-duration;
 
     @include on-tablet {
       background-image: url(/src/img/new-look-wide.png);
@@ -63,11 +65,17 @@
     }
 
   }
+
+  &__pictures-new-look:hover {
+    @include pictures-animation;
+  }
+
   &__pictures-men {
     background-image: url(/src/img/men.png);
     width: 130px;
     height: 130px;
     background-size: cover;
+    transition: all $transition-duration;
 
     @include on-tablet {
       width: 184px;
@@ -81,12 +89,18 @@
     }
 
   }
+
+  &__pictures-men:hover {
+    @include pictures-animation;
+  }
+
   &__pictures-shiva {
     background-image: url(/src/img/shiva.png);
     width: 88px;
     height: 87px;
     background-size: cover;
     margin-right: 8px;
+    transition: all $transition-duration;
 
     @include on-tablet {
       width: 288px;
@@ -101,12 +115,18 @@
     }
 
   }
+
+  &__pictures-shiva:hover {
+    @include pictures-animation;
+  }
+
   &__pictures-carpet {
     background-image: url(/src/img/carpet.png);
     width: 88px;
     height: 87px;
     background-size: cover;
     margin-right: 8px;
+    transition: all $transition-duration;
 
     @include on-tablet {
       width: 288px;
@@ -122,11 +142,17 @@
     }
 
   }
+
+  &__pictures-carpet:hover {
+    @include pictures-animation;
+  }
+
   &__pictures-demon {
     background-image: url(/src/img/demon.png);
     width: 88px;
     height: 87px;
     background-size: cover;
+    transition: all $transition-duration;
 
     @include on-tablet {
       display: none;
@@ -144,12 +170,18 @@
     }
 
   }
+
+  &__pictures-demon:hover {
+    @include pictures-animation;
+  }
+
   &__pictures-clock {
     background-image: url(/src/img/clock.png);
     width: 130px;
     height: 130px;
     background-size: cover;
     margin-right: 20px;
+    transition: all $transition-duration;
 
     @include on-tablet {
       width: 184px;
@@ -164,11 +196,16 @@
     }
   }
 
+  &__pictures-clock:hover {
+    @include pictures-animation;
+  }
+
   &__pictures-statue {
     background-image: url(/src/img/statue.png);
     width: 130px;
     height: 130px;
     background-size: cover;
+    transition: all $transition-duration;
 
     @include on-tablet {
       background-image: url(/src/img/statue-wide.png);
@@ -181,5 +218,9 @@
       width: 672px;
       height: 320px;
       }
+  }
+
+  &__pictures-statue:hover {
+    @include pictures-animation;
   }
 }

@@ -8,6 +8,10 @@
 
     text-align: center;
 
+    @include on-tablet {
+      font-size: 48px;
+    }
+
   &--2 {
     margin: 0;
     order: 2;
@@ -18,10 +22,16 @@
     line-height: 32px;
     letter-spacing: -1.5px;
     text-align: left;
+
+    @include on-tablet {
+      font-size: 48px;
+      line-height: 48px;
+    }
   }
 
     &__description {
     margin-top: 5px;
+    margin-bottom: 0;
 
     font-family: Cinzel, serif;
     font-weight: 400;
@@ -30,6 +40,18 @@
     line-height: 27px;
     color: $main-dark;
 
+  }
+
+  &__description--now-on-view {
+    margin-top: 8px;
+
+    @include on-tablet {
+      max-width: 400px;
+    }
+
+    @include on-dekstop {
+      max-width: 325px;
+    }
   }
 
   &__description--red {
