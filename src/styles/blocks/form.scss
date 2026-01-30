@@ -1,6 +1,4 @@
 .form {
-  @include margin-inline;
-
   @include on-tablet {
     margin: 0;
   }
@@ -62,6 +60,7 @@
   }
 
   &__message {
+    resize: none;
     box-sizing: border-box;
     width: 280px;
     height: 144px;

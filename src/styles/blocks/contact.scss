@@ -1,5 +1,4 @@
 .contact {
-  margin-inline: 20px;
   margin-bottom: 48px;
 
     &__name {
@@ -28,6 +27,7 @@
     line-height: 27px;
     color: $text-gray;
     margin: 0 0 8px;
+    text-decoration: none;
 
   }
 
@@ -45,5 +45,6 @@
     font-size: 16px;
     line-height: 140%;
     color: $text-gray;
+    text-decoration: none;
   }
 }
