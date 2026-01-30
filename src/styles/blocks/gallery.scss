@@ -1,10 +1,7 @@
 .gallery {
   display: flex;
-  flex-flow: column wrap;
-  place-content: center;
 
   &__content {
-    width: max-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -49,8 +46,6 @@
 
   &__pictures--3--pictures {
     display: flex;
-    place-content: center;
-    width: 100%;
   }
 
   &__pictures-new-look {
