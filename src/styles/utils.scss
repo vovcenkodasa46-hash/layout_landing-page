@@ -24,6 +24,10 @@
   @include on-tablet {
     padding-inline: 72px;
   }
+
+  @include on-dekstop {
+    padding-inline: 120px;
+  }
 }
 
 @mixin text-transform-title {

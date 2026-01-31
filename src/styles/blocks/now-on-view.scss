@@ -1,9 +1,8 @@
 .now-on-view {
-  @include margin-inline;
+  @include content-padding-inline;
 
-    max-width: 1200px;
+    max-width: 1020px;
     margin: 0 auto;
-    padding-inline: 20px;
 
   &__wrapper {
     display: flex;
