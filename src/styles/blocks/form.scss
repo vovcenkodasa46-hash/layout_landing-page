@@ -3,6 +3,10 @@
     margin: 0;
   }
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__name {
     box-sizing: border-box;
     height: 48px;
