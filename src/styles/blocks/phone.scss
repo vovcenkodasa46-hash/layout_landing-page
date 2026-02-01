@@ -1,6 +1,15 @@
 .phone-container {
   position: relative;
   display: inline-block;
+
+    &::after { // місток між іконкою і випадайкою, щоб не злітало при швидкому русі мишки
+    content: "";
+    position: absolute;
+    left: -230px;   // під твою випадайку
+    top: -60px;     // зона над і поруч з іконкою
+    width: 260px;
+    height: 80px;
+  }
 }
 
 .phone-dropdown {
@@ -16,6 +25,12 @@
 
   transform: translateY(-6px);
   transition: all $transition-duration ease;
+
+  display: none;
+
+  @include on-dekstop {
+    display: block;
+  }
 
   &__label {
     margin: 8px 0 0;
@@ -47,6 +62,7 @@
 
 .phone-container:hover .phone-dropdown {
   opacity: 1;
-  pointer-events: all;
+  pointer-events: auto;
   transform: translateY(0);
+
 }

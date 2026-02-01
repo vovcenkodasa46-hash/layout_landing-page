@@ -25,3 +25,9 @@
     transform: translateX(0);
   }
 }
+
+.page:has(.page__menu:target) { // це щоб скрол меню пропав
+  overflow: hidden;
+  height: 100vh;
+}
+
